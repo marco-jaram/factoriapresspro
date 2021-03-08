@@ -1,0 +1,49 @@
+
+********************************
+HEADER
+********************************
+Favicon
+esta en la carpeta img sed ebe guardar con el nombre "favicon.ico" 32x32px
+
+Tocuh es la imagen que se vera cuadno alguien guarde la pagina en su celular en pantalla inicio. Poner una inical del logo o el logo en sudefecto
+y guardad como "touch.png"
+
+
+
+
+********************************
+PAGINAS pages
+********************************
+
+Las paginas no tiene sidebar. 
+Para QUITAR SIDEBAR primero  cambiar clase "sin-sidebar" por  "con-sidebar"
+ por ultimo   agregar <?php get_sidebar(); ?>  despues del div ".contenido-principal"
+
+El titulo se puede eliminar desde Style en la seccion sobre pagina con la clase "titulo-pagina" solo hay que DEScomentarla
+
+
+
+
+********************************
+ENTRADAS post (blog)
+********************************
+ Las entradas tienen sidebar a la derecha
+
+ Para QUITAR  DATOS DE PUBLICACION ir a Style en la seccion Entradas y descomentar ".datos-publicacion" 
+ Para QUITAR  TITULOS ir a Style en la seccion Entradas y descomentar ".titulo-entrada"
+
+
+
+
+********************************
+FOOTER
+********************************
+
+
+
+
+
+
+********************************
+SIDEBAR
+********************************
