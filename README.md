@@ -1,2 +1,3 @@
-# factoriapresspro
- theme wordpress
+# Factoriapresspro
+ Theme wordpress
+Tema multi-uso para wordpress
