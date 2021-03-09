@@ -25,6 +25,9 @@ if (function_exists('add_theme_support'))
 
    // add soporte para logo
     add_theme_support( 'custom-logo' );
+
+
+    // //para logo, ltitulo y descripcion
     function themename_custom_logo_setup() { $defaults = array( 
         'height' => 100, 
         'width' => 400, 
@@ -34,7 +37,6 @@ if (function_exists('add_theme_support'))
     ), ); 
     add_theme_support( 'custom-logo', $defaults ); } 
     add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
-    // //para ltitulo
   
 
     
@@ -59,24 +61,26 @@ if (function_exists('add_theme_support'))
 
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
     //ppara la imagen de fondo de pagina. Solo comentar// y se
-    add_theme_support('custom-background', array(
-	'default-color' => 'FFF',
-	'default-image' => get_template_directory_uri() . '/img/bg.jpg'
-    ));
+    // add_theme_support('custom-background', array(
+	// 'default-color' => 'FFF',
+	// 'default-image' => get_template_directory_uri() . '/img/bg.jpg'
+    // ));
 
     // Add Support for Custom Header - Uncomment below if you're going to use
     //el color de fondo que esta como default es solo el que esta seleccionado en el pixer pero no esta activado 
-    add_theme_support('custom-header', array(
-	'default-image'			=> get_template_directory_uri() . '/img/headers/default.jpg',
-	'header-text'			=> false,
-	'default-text-color'		=> '000',
-	'width'				=> 1000,
-	'height'			=> 198,
-	'random-default'		=> false,
-	'wp-head-callback'		=> $wphead_cb,
-	'admin-head-callback'		=> $adminhead_cb,
-	'admin-preview-callback'	=> $adminpreview_cb
-    ));
+
+
+    // add_theme_support('custom-header', array(
+	// 'default-image'			=> get_template_directory_uri() . '/img/headers/default.jpg',
+	// 'header-text'			=> false,
+	// 'default-text-color'		=> '000',
+	// 'width'				=> 1000,
+	// 'height'			=> 198,
+	// 'random-default'		=> false,
+	// 'wp-head-callback'		=> $wphead_cb,
+	// 'admin-head-callback'		=> $adminhead_cb,
+	// 'admin-preview-callback'	=> $adminpreview_cb
+    // ));
 
     // Enables post and comment RSS feed links to head
     add_theme_support('automatic-feed-links');
@@ -125,18 +129,19 @@ function factoriapress_header_scripts()
         wp_register_script('modernizr', get_template_directory_uri() . '/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1'); // Modernizr
         wp_enqueue_script('modernizr'); // Enqueue it!
 
-        wp_register_script('factoriapressscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
-        wp_enqueue_script('factoriapressscripts'); // Enqueue it!
+        // wp_register_script('factoriapressscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
+        // wp_enqueue_script('factoriapressscripts'); // Enqueue it!
 
-        wp_register_script('mis-scripts', get_template_directory_uri() . '/js/mis-scripts.js', array('jquery'), '1.0.0'); // Custom scripts
-        wp_enqueue_script('mis-scripts'); // Enqueue it!
+        // wp_register_script('mis-scripts', get_template_directory_uri() . '/js/mis-scripts.js', array('jquery'), '1.0.0'); // Custom scripts
+        // wp_enqueue_script('mis-scripts'); // Enqueue it!
         /*------------------------------------*\
 	     Lo agregado
         \*------------------------------------*/
 
         //mis ecripts de javascript
-        wp_enqueue_script('mis-scripts', get_template_directory_uri() . '/js/mis-scripts.js', array(),'1.0.0' , true);
-
+        wp_enqueue_script('mis-scriptsx', get_template_directory_uri() . '/js/mis-scriptsx.js', array(),'1.0.0' , true);
+        wp_enqueue_script('fontawesome', 'https://kit.fontawesome.com/fa227621e8.js', array(), '1.0.0');
+        wp_enqueue_script('fontawesome'); // Enqueue it!
 
 
     }
@@ -159,8 +164,8 @@ function factoriapress_styles()
 
     wp_register_style('factoriapress', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
     wp_enqueue_style('factoriapress'); // Enqueue it!
-    wp_enqueue_style('googleFont', 'https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;700;900&display=swap', array(), '1.0.0');
-    wp_enqueue_style('factoriapress'); // Enqueue it!
+    wp_enqueue_style('googlefont', 'https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;700;900&display=swap', array(), '1.0.0');
+    wp_enqueue_style('googlefont'); // Enqueue it!
 }
 
 // Register factoriapress Navigation

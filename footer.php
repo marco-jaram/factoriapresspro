@@ -1,22 +1,23 @@
 			<!-- footer -->
 	    <footer class="site-footer" role="contentinfo">
 			<div class="contenedor">
-			      <hr class="footer-hr">
+			      <!-- <hr class="footer-hr"> -->
 			    <div class="footer-contenido">
-				          <!-- copyright -->
-				   <p class="copyright">
-				    	&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Hecho por', 'factoriapress'); ?>
-					    <a href="//marco-jaram.com" title="WordPress">Marco Jaramillo.</a>
-				   </p>
-				         <!-- /copyright -->
+				          
 				   <div class="redes-sociales">
 					  <ul>
-						<li><a href="">Facebook</a></li>
-						<li><a href="">Instagram</a></li>
-						<li><a href="">Twitter</a></li>
+						<li class="facebook-icono"> <a href="https://marco-jaram.com"><i class="iconos fab fa-facebook-square"></i></a></li>
+						<li class="instagram-icono"><a href="https://"><i class="iconos fab fa-instagram-square"></i></a></li>
+						<li class="twitter-icono"><a href="https://"><i class="iconos fab fa-twitter-square"></i></a></li>
+						<li class="youtube-icono"><a href="https://"><i class="iconos fab fa-youtube-square"></i></a></li>
+						<li class="whatsapp-icono"><a href="https://"><i class="iconos fab fa-whatsapp-square"></i></a></li>
 					  </ul>
 				   </div>
-
+                      <!-- copyright -->
+				   <p class="copyright">
+				    	&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>
+				   </p>
+				         <!-- copyright -->
 			    </div>
             </div>
 			</footer>

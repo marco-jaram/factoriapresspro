@@ -41,10 +41,36 @@ del header eliminado
 
 
 	del footer
-
+ <!-- copyright -->
+				   <p class="copyright">
+				    	&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Hecho por', 'factoriapress'); ?>
+					    <a href="//marco-jaram.com" title="WordPress">Marco Jaramillo.</a>
+				   </p>
+				         <!-- /copyright -->
     
     <div class="redes-sociales">
 					<a href="">Facebook</a>
 					<a href="">Instagram</a>
 					<a href="">Twitter</a>
 				</div>
+
+
+
+
+
+
+				        $factoriapress_description = get_bloginfo( 'description', 'display' );
+						if ( $factoriapress_description || is_customize_preview() ) :
+							?>
+
+					
+							<p class="descripcion-sitio"><?php echo $factoriapress_description;  ?></p>
+						<?php endif; ?>
+
+
+
+						$fppro_description = get_bloginfo( 'description', 'display' );
+			            if ( $fppro_description || is_customize_preview() ) :
+				            ?>
+				       <p class="site-description"><?php echo $fppro_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+			           <?php endif; ?>
